@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+
+.cabecalho_menu i::before {
+    content: "\e5d2";
+    font-size: 50px;
+    color: #7ed957;
+    font-weight: 500;
+    
+}
+
+.logo_cabecalho {
+    width: 100px;
+}
+
+.cabecalho_carrinho i::before {
+    content: "\e8cc";
+    font-size: 50px;
+    color: #7ed957;
+    font-weight: 500;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content:space-between;
+    padding: 2px;
+    background: #e8e6e6;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background: #252525;
+    width: 70vw;
+    height: 100vh;
+    opacity: 95%;   
+    
+    position: absolute;
+    left: -100vh;
+    transition: .5s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .5s;
+}
+
+.menu-principal {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 2em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    margin-left: 1em;
+}
+
+.conteudo-principal{
+    background: linear-gradient(#f0eeee, #7ed957);
+}
+
+.banner-destaque {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.produtos_principais {
+    padding: 10px 24px 16px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-destaque{
+    font-weight: 500;
+    font-size: 35px;    
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.produto_principal-1{
+    background:#252525;
+    border-radius: 10px;
+}
+
+.produto-principal-1{
+    width: 100%;  
+    
+}
+
+.titulo-produto-principal-1 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0.4em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;  
+    color: #FFF;
+}
+
+.produto_principal-2{
+    background:#252525;
+    border-radius: 10px;
+}
+
+.produto-principal-2{
+    width: 100%;
+}
+
+.descricao-produtos {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0.4em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+.ver-mais {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 0.4em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    text-align: end;
+}
+
+.seguranca {
+    background: #7ed957;
+    padding: 10px 24px 16px 16px;
+    
+}
+
+.titulo-seguranca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1em;
+    margin: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.titulo-seguranca i::before {
+    content: "\e32a";
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.seguranca-descricao {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+.formas-pagamentos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-areas: 
+    "visa american-espress mastercard boleto"
+    "mercado-pago paypal pagseguro pagseguro";
+    padding: 40px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagamento-logo {    
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pagamento-logo-visa {
+    grid-area: visa;
+}
+.pagamento-logo-mastercard {
+    grid-area: mastercard;
+}
+
+.pagamento-logo-american-express {
+    grid-area: american-espress;
+    
+}
+
+.pagamento-logo-boleto {
+    grid-area: boleto;
+}
+
+.pagamento-logo-mercado-pago{
+    grid-area: mercado-pago;
+}
+
+.pagamento-logo-paypal{
+    grid-area: paypal;
+}
+
+.pagamento-logo-pag-seguro{
+    grid-area: pagseguro;
+}
+
+.assine-aqui {
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 10px 10px 10px;
+    background: #7ed957;
+}
+
+.titulo-assineja {
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200;
+    padding: 0 30px 30px;
+    
+}
+
+.insira-email {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 0.4em;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;    
+}
+
+.email {
+    width: 90%;
+    display: block;
+    padding: 15px;    
+    border: solid 2px #000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #e8e6e6;
+}
+
+.assineja {
+    width: 90vw;
+    display: block;
+    padding: 15px;    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #e4255b;
+    border-radius: 30px;
+    color: #FFF;
+}   
+    
