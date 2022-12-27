@@ -13,27 +13,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">        
         <button  class="cabecalho_menu"><i class="material-symbols-outlined"></i></button>
-        <img src="./img/logo.png" class="logo_cabecalho">
-        <button  class="cabecalho_carrinho"><i class="material-symbols-outlined"></i></button>
+        <img src="./img/decoracao-esquerda-1.png" class="cabecalho_decoracao-esquerda-1">
+        <img src="./img/decoracao-esquerda-2.png"  class="cabecalho_decoracao-esquerda-2">        
+        <img src="./img/logo-desktop.png" class="logo_cabecalho-mobile">    
+        <button  class="cabecalho_login"><i class="material-symbols-outlined"></i></button>
+        <button  class="cabecalho_carrinho"><i class="material-symbols-outlined"></i></button>       
     </header>
-    <nav class="menu-lateral">
-        <ul class="menu-principal">
-            <li class="menu-principal-inicio">Início</li>
-            <li class="menu-principal-sobre">Sobre</li>
-            <li class="menu-principal-pet">Pet</li>
-            <li class="menu-principal-tamanhos">Tamanhos Especiais</li>            
-            <li class="menu-principal-trocas">Trocas e Devoluções</li>
-            <li class="menu-principal-contato">Contato</li>
-        </ul>
-    </nav>
-    <main class="conteudo-principal">
-        <article class="destaque_pagina">
-            <img src="./img/banner.png" class="banner-destaque">
-        </article>
+    
+    <main class="conteudo-principal">        
+        <nav class="menu-lateral">
+            <ul class="menu-principal">
+                <li class=" menu_principal-desktop menu-principal-inicio">Início</li>
+                <li class=" menu_principal-desktop menu-principal-sobre">Sobre</li>
+                <li class=" menu_principal-desktop menu-principal-pet">Pet</li>
+                <li class=" menu_principal-desktop menu-principal-tamanhos">Tamanhos Especiais</li>            
+                <li class=" menu_principal-desktop menu-principal-trocas">Trocas e Devoluções</li>
+                <li class=" menu_principal-desktop menu-principal-contato">Contato</li>
+            </ul>
+        </nav>
+    
+        <section class="destaque_pagina slider">
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                
+                    <div class="slide first">
+                        <img src="./img/banner.png" class="banner-destaque" alt="#" >
+                    </div>
+                    <div class="slide slide-mobile" >
+                        <img src="./img/banner-2.png" class="banner-destaque banner-slides-desktop" alt="#">
+                    </div>
+                    <div class="slide slide-mobile">
+                        <img src="./img/banner-3.png" class="banner-destaque banner-slides-desktop" alt="#">
+                    </div>
+                    <div class="slide slide-mobile">
+                        <img src="./img/banner-4.png" class="banner-destaque banner-slides-desktop" alt="#">
+                    </div>
+
+                    <div class="navegacao-auto">
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                        <div class="auto-btn-4"></div>
+                    </div>
+                </div>
+            
+                <div class="navegacao-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+        </section>
+        
         <section class="produtos_principais">
             <h1 class="titulo-destaque">Ofertas</h1>
             <article class="produto_principal-1">
@@ -51,16 +91,16 @@
             </article>          
         </section>
         <section class="seguranca">
-            <h3 class="titulo-seguranca"><i class="material-symbols-outlined"></i>Segurança</i></h3>
+            <h3 class="titulo-seguranca"><i class="material-symbols-outlined"></i>Segurança</h3>
             <p class="seguranca-descricao">Ambiente 100% Seguro. Sua Informação é Protegida Pela Criptografia SSL 256-Bit.</p>
             <div class="formas-pagamentos">
-                <img class="pagamento-logo pagamento-logo-visa" src="./img/visa.svg" alt="">
-                <img class="pagamento-logo pagamento-logo-mastercard" src="./img/mastercard-logo.png" alt="">
-                <img class="pagamento-logo pagamento-logo-american-express" src="./img/american-express.png" alt="">
-                <img class="pagamento-logo pagamento-logo-boleto" src="./img/boleto.png" alt="">
-                <img class="pagamento-logo pagamento-logo-mercado-pago"src="./img/mercado-pago.svg" alt="">
-                <img class="pagamento-logo pagamento-logo-paypal" src="./img/paypal.svg" alt="">
-                <img class="pagamento-logo pagamento-logo-pag-seguro" src="./img/pagseguro.png" alt="">
+                <img class="pagamento-logo pagamento-logo-visa" src="./img/visa.svg" alt="Logo cartão Visa">
+                <img class="pagamento-logo pagamento-logo-mastercard" src="./img/mastercard-logo.png" alt="Logo cartão Mastercard">
+                <img class="pagamento-logo pagamento-logo-american-express" src="./img/american-express.png" alt="Logo cartão American Express">
+                <img class="pagamento-logo pagamento-logo-boleto" src="./img/boleto.png" alt="Logo Boleto Bancário">
+                <img class="pagamento-logo pagamento-logo-mercado-pago" src="./img/mercado-pago.svg" alt="Logo Mercado Pago">
+                <img class="pagamento-logo pagamento-logo-paypal" src="./img/paypal.svg" alt="Logo Paypal">
+                <img class="pagamento-logo pagamento-logo-pag-seguro" src="./img/pagseguro.png" alt="Logo Pag Seguro">
             </div>
         </section>
         <div class="assine-aqui">
